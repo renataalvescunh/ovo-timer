@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro de Cozimento de Ovos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background: #ff7e5f;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #feb47b;
+}
+
+#timer {
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cronômetro de Cozimento de Ovos</h1>
+        <div id="buttons">
+            <button onclick="startTimer(3)">Ovo Mollet (3 min)</button>
+            <button onclick="startTimer(5)">Ovo Médio (5 min)</button>
+            <button onclick="startTimer(7)">Ovo Duro (7 min)</button>
+            <button onclick="startTimer(9)">Ovo Muito Duro (9 min)</button>
+            <button onclick="startTimer(12)">Ovo Super Duro (12 min)</button>
+        </div>
+        <div id="timer"></div>
+        <button id="resetButton" onclick="resetTimer()" style="display: none;">Reiniciar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
