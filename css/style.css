@@ -103,3 +103,20 @@ footer a:hover {
   }
   
 
+@media screen and (max-width: 654px) {
+
+
+.container {
+    padding: 1em;
+    margin: 30px;
+
+}
+
+
+
+footer {
+        margin-left: 15%;
+
+}
+
+}
