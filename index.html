@@ -3,28 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Timer de Ovo </title>
+    <title> Ovo-timer </title>
+    <link rel="shortcut icon" href="img/ovo-cute.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="shortcut icon" href="img/cards/logo artcard.png" type="image/x-icon">
-    
 </head>
 <body>
-    <div class="header">
-        <h1> Timer </h1> </a> 
-    </div>
-    <main class="content-cards">
-        <div class="flex-galery">
-            <a href=""> <img class="" src="" alt=""></a>
-            <a href=""> <img class="" src="" alt=""></a>
-            <a href=""> <img class="" src="" alt=""></a>
-        </div>
-        <h2> Faça você mesmo o seu tempo! </h2>
-    </main>
-    <footer>
+    <main>
+        <div class="container">
+            <h1> Cronômetro </h1> 
+            <br> <br>
+        <div id="hover-btn">
+     <button onclick="startTimer(3.5)">Ovo poché </button>
+   <button onclick="startTimer(4)">Gema mole </button>
+    <button onclick="startTimer(5)">Ovo Mollet </button>
+    <button onclick="startTimer(13)">Ovo "comum" </button>
+    <button onclick="startTimer(18)">Ovo Duro </button>
+    <audio id="hover-sound" src="effect.wav" preload="auto"></audio>
+    <audio id="end-sound" src="cute-music.mp3" preload="auto"></audio>
+</div>
+        <div id="timer"> </div>
+         <button id="resetButton" onclick="resetTimer()" style="display: none;">Voltar</button>
+          </div>
+    <script src="js/script.js"></script>
+<div class="container-extra"> 
+    <img src="img/ovo4.png" alt="" width="50px" height="auto"> 
+    <br> 
+    <p> Antes de tudo, verifique as condições necessárias para que sua receita dê certo. <em> O simples, ás vezes, pode ser o mais complicado.</em> 
+    <br> Então, verifique os fatores abaixo que podem variar o tempo de preparo: <br>
+    <br> ⮞ Temperatura da água e ambiente; 
+    <br> ⮞ Tamanho do ingrediente usado; 
+    <br> ⮞ Seu incrível gosto pessoal!
+ </p>
+</div> 
+</main>
+    <footer>    
         <p> Desenvolvido por  <a href="https://github.com/renataalvescunh" target="_blank">  @renataalvescunh  </a> </p> 
-      </footer>
-  </body>
-  <script src="script.js"></script>
+    </footer>
 </body>
 </html>
+
