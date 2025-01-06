@@ -17,4 +17,3 @@
  Sobre o projeto
 </h2>
 Um pequeno site experimental, na qual criei para aprimorar minhas habilidades e aprender a utilizar efeitos sonoros aplicados no html e js. E, claro, para nunca mais errar o ponto do ovo.
- Um ovo poché? Mollet? Com gema dura? 
